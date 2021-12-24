@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!--Font Awesome icon -->
+    <script src="https://use.fontawesome.com/54aef7fad9.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QL1LDTG6RS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-QL1LDTG6RS');
+    </script>
+</head>
+
+<body>
+    <main>
+        <!--   HEADER SECTION   -->
+        <header class="toolbar">
+            <h2 class="logo"><a href="index.html">Dev Tiwo</a></h2>
+            <nav class="navbar">
+                <img src="images/Union.png" alt="menu-icon" class="navicon">
+                <ul class="nav-links">
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#aboutme">About</a></li>
+                    <li><a href="#contactme">Contact</a></li>
+                    <li><img src="images/navicon.png" alt="nav icon"></li>
+                </ul>
+                <div class="mob-menu hidden">
+                    <i class="fa fa-times" aria-hidden="true" id="close"></i>
+                    <ul class="menu-link">
+                        <li><a href="#portfolio" class="links">Portfolio</a></li>
+                        <li><a href="#aboutme" class="links">About</a></li>
+                        <li><a href="#contactme" class="links">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!--   INTRODUCTION SECTION   -->
+        <section class="content">
+            <article class="header-cont">
+                <h1 class="intro">Hey There. I’m Taiwo Adetunji</h1>
+                <h3>I am a software Developer</h3>
+                <p>I can help you build a product, feature or website. Look through some of my work and experience! If
+                    you like what you see and have a project you need coded,
+                    don’t hestiate to contact me.</p>
+            </article>
+            <ul class="social-icons">
+                <li><a href="https://github.com/Devtiwo"><img src="images/github.png" alt="github logo"
+                            class="icons"></a></li>
+                <li><a href="https://www.linkedin.com/in/taiwo-adetunji-860666225"><img src="images/linkedin.png"
+                            class="icons" alt="linkedin logo"></a></li>
+                <li><a href="https://twitter.com/devtiwo"><img src="images/Vector.png" class="icons"
+                            alt="twitter-logo"></a></li>
+            </ul>
+        </section>
+        <!--  PORTFOLIO SECTION  -->
+        <section class="container" id="portfolio">
+            <section>
+                <div class="works-header">
+                    <h2>My Recent Works</h2>
+                    <img src="images/hori.png" alt="Horizontal-line">
+                </div>
+            </section>
+            <!--  MULTIPOST CARD SECTION  -->
+            <section class="diff-cont">
+            </section>
+            <!-- SAME CARDS SECTION  -->
+            <section class="same-works">
+            </section>
+        </section>
+        <!--    ABOUT ME SECTION   -->
+        <section class="about" id="aboutme">
+            <article class="myself">
+                <h2>About Me</h2>
+                <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some
+                    of my work and experience! If you like what you see and have a project you need coded, don’t
+                    hestiate to contact me.</p>
+                <button class="abt-btn">Get My Resume</button>
+            </article>
+            <hr>
+            <article class="expertise">
+                <ul class="list-wrap">
+                    <li class="header1">Language
+                        <ul class="lang">
+                            <li>Javascript</li>
+                            <li>Ruby</li>
+                            <li>Html</li>
+                            <li>Css</li>
+                        </ul>
+                    </li>
+                    <li class="header2">Frameworks
+                        <ul class="lang">
+                            <li>Bootstrap</li>
+                            <li>Ruby on Rails</li>
+                            <li>RSPec</li>
+                            <li>CapyBara</li>
+                            <li>Selenium</li>
+                        </ul>
+                    </li>
+                    <li class="header3">Skills
+                        <ul class="lang">
+                            <li>Codekit</li>
+                            <li>Github</li>
+                            <li>Codepen</li>
+                            <li>Gitlab</li>
+                            <li>Terminal</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <!--   CONTACT ME SECTION  -->
+        <section class="contact" id="contactme">
+            <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+            <form action="https://formspree.io/f/xzbopjlq" method="POST" id="contact-form">
+                <input type="text" name="user_fullname" placeholder="Full name" id="name" maxlength="30" required>
+                <input type="email" name="user_email" placeholder="Email address" id="email" required>
+                <textarea name="message" maxlength="500" placeholder="Enter text here" id="text" required></textarea>
+                <small class="err-msg"></small>
+                <button type="submit">Get in touch</button>
+            </form>
+        </section>
+        <!--  FOOTER SECTION  -->
+        <footer>
+            <ul class="footer-icons">
+                <li><a href="https://github.com/Devtiwo"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/taiwo-adetunji-860666225"><i class="fa fa-linkedin"
+                            aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/devtiwo"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>
+        </footer>
+    </main>
+    <section class="modal-container">
+        <article class="modal-content">
+            <div class="header">
+                <h2 id="projectname"></h2>
+                <span id="closeModal"><i class="fa fa-times" id="modclose" aria-hidden="true"></i></span>
+            </div>
+            <ul class="md-wrapper" id="languagesApp"></ul>
+            <div class="btn-desc">
+                <img id="projectImage" src="#" alt="sample project">
+                <div>
+                    <div>
+                        <p class="modal-text" id="projectDesc"></p>
+                    </div>
+                    <div class="modalbtn">
+                        <a id="liveLink" href="#" target="_blank">See Live <i class="fa fa-external-link"
+                                aria-hidden="true"></i></a>
+                        <a id="sourceCode" href="#" target="_blank">See Source <i class="fa fa-github"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
